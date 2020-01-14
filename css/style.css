@@ -1,0 +1,192 @@
+body{
+    font-family:Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    padding-top:54px;
+    color:slategray;
+    background-color:lightyellow;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-weight:700;
+    text-transform:uppercase;
+    color:lightslategrey
+}
+h1{
+    font-size:6rem;
+    line-height:5.5rem
+}
+h2{
+    font-size:3.5rem;
+    text-decoration: underline;
+}
+h3{
+    font-size:2rem;
+    font-weight: lighter;
+}
+p.lead{
+    font-size:1.15rem;
+    font-weight:400
+}
+.subheading{
+    text-transform:uppercase;
+    font-weight:500;
+    font-family:'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    font-size:1.5rem
+}
+.social-icons a{
+    display:inline-block;
+    height:3.5rem;
+    width:3.5rem;
+    background-color:cadetblue;
+    color:whitesmoke;
+    border-radius:100%;
+    text-align:center;
+    font-size:2rem;
+    line-height:3.5rem;
+    margin-right:1rem
+}
+.social-icons a:last-child{
+    margin-right:0
+}
+
+.social-icons i {
+	-webkit-transform: rotate(360deg) scale(1);
+	transform: rotate(360deg) scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.social-icons i:hover {
+	-webkit-transform: rotate(0) scale(0.7);
+    transform: rotate(0) scale(0.7);
+}
+
+.dev-icons{
+    font-size:3rem
+}
+.dev-icons .list-inline-item i:hover{
+    color:cadetblue
+}
+#sideNav .navbar-nav .nav-item .nav-link{
+    font-weight:800;
+    letter-spacing:.05rem;
+    text-transform:uppercase
+}
+#sideNav .navbar-toggler:focus{
+    outline-color:cadetblue
+}
+@media (min-width:992px){
+    body{
+        padding-top:0;
+        padding-left:17rem
+    }
+    #sideNav{
+        text-align:center;
+        position:fixed;
+        top:0;
+        left:0;
+        display:flex;
+        flex-direction:column;
+        width:17rem;
+        height:100vh
+    }
+    #sideNav .navbar-brand{
+        display:flex;
+        margin:auto auto 0;
+        padding:.5rem
+    }
+    #sideNav .navbar-brand .img-profile{
+        max-width:10rem;
+        max-height:10rem;
+        border:.5rem solid lightsteelblue
+    }
+    #sideNav .navbar-collapse{
+        display:flex;
+        align-items:flex-start;
+        flex-grow:0;
+        width:100%;
+        margin-bottom:auto
+    }
+    #sideNav .navbar-collapse .navbar-nav{
+        flex-direction:column;
+        width:100%
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item{
+        display:block
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{
+        display:block
+    }
+}
+@media (min-width:768px){
+    section.resume-section{
+        min-height:100vh
+    }
+    section.resume-section .resume-item .resume-date{
+        min-width:18rem
+    }
+}
+@media (min-width:992px){
+    section.resume-section{
+        padding-top:3rem!important;
+        padding-bottom:3rem!important
+    }
+}
+
+section.resume-section{
+    padding-top:5rem!important;
+    padding-bottom:5rem!important;
+    max-width:75rem
+}
+section.resume-section .resume-item .resume-date{
+    min-width:none
+}
+
+.bg-primary{
+    background-color:cadetblue!important
+}
+.text-primary{
+    color:cadetblue!important
+}
+a{
+    color:cadetblue
+}
+
+#enumloisirs{
+    font-style: italic;
+    font-size: medium;
+}
+
+.skillbar{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.skillbar-bar:before{
+    background:papayawhip;
+    content: "";
+    height: 7px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.skillbar-bar{
+    height: 7px;
+    width: 0px;
+    background:lightblue;
+    transition-property: width, background-color;
+}
+.skillbar-title{
+    color:cadetblue;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.skill-bar-percent{
+    float: right;
+    display: inline-block;
+    color: #999;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
